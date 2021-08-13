@@ -1,0 +1,71 @@
+//--------------------------------------------------------------
+// NOMES DOS RESPONSÁVEIS: blablabla E blablabla
+//--------------------------------------------------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <malloc.h>
+
+// ######### ESCREVA O NROUSP DO PRIMEIRO INTEGRANTE AQUI
+int nroUSP1() {
+    return 0;
+}
+
+// ######### ESCREVA O NROUSP DO SEGUNDO INTEGRANTE AQUI (OU DEIXE COM ZERO)
+int  nroUSP2() {
+    return 0;
+}
+
+// ######### ESCREVA O NRO DO GRUPO CADASTRADO
+int grupo() {
+    return 0;
+}
+
+typedef struct {
+	int bot_lin;
+	int bot_col;
+	int exit_lin;
+	int exit_col;
+	int box_col;
+	int key_col;
+	bool haskey;
+} ESTADO;
+
+
+
+// funcao principal
+void caminhoValido(ESTADO* s, char* resp);
+
+//------------------------------------------
+// O EP consiste em implementar esta funcao
+// e outras funcoes auxiliares que esta
+// necessitar
+//------------------------------------------
+void caminhoValido(ESTADO* s, char* resp)
+{
+
+	// seu codigo AQUI
+
+}
+
+
+
+//---------------------------------------------------------
+// use main() para fazer chamadas de teste ao seu programa
+// mas nao entregue o codido de main() nem inclua nada
+// abaixo deste ponto
+//---------------------------------------------------------
+int main()
+{
+	// exemplo de teste do exemplo 1 da especificacao do EP
+	char* resp = (char*) malloc(sizeof(char)*500);
+	ESTADO* s = (ESTADO*) malloc(sizeof(ESTADO));
+	s->bot_lin=3;  s.bot_col=3;
+	s->exit_lin=3; s.exit_col=3;
+	s->box_col=1;
+	s->key_col=2;
+	s->haskey=false;
+	caminhoValido(s, resp);
+}
+
